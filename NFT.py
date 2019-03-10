@@ -23,6 +23,6 @@ def compareData(df):
     
     return "Of all {} donations through WeTrust in 2018, {}({}%) were made with accounts, and {}({}%) of those donations with accounts claimed an nft".format(df.shape[0], accounts, account_fraction, nft, nft_fraction)
     
-reader = CSVReader()
+reader = CSVReader("2018.csv")
 df_temp = reader.get_df()
 print(compareData(df_temp))

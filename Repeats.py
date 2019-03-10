@@ -55,7 +55,7 @@ def compare_repeats(df):
         repeats_total, actual_repeats.shape[0], actual_sum, repeat_fration, nft_sum, nft_fraction, nft_max, repeats_temp.iloc[0]["cause"])
 
 
-reader = CSVReader()
+reader = CSVReader("2018.csv")
 df_temp = reader.get_df()
 
 

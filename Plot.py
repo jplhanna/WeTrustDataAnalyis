@@ -23,6 +23,6 @@ def plot_donations(df):
     plt.yticks([0.0, 2.5 * 1e18, 7.5 * 1e18, 0.2 * 1e20, 1e20], ["",.025,.075,.2,1])#Reformat the yaxis ticks to more closely label according to the values that the donations actually fall on.
     fig.savefig("CauseGraph.svg")
     
-reader = CSVReader()
+reader = CSVReader("2018.csv")
 df_temp = reader.get_df()
 plot_donations(df_temp)
